@@ -172,9 +172,8 @@ div.timer_holder{
     font-size: 2rem;
     padding: 20px;
 }
-p{
-    width: 50%;
-    font-size: 1rem;
+._slideshow div{
+    max-width: 40%;
 }
 .button_container button:hover{
     background-color: white;
