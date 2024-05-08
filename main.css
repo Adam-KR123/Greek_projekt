@@ -139,11 +139,10 @@ div.timer_holder{
     align-items: center;
     margin: 100px 0px 100px 0px;
     flex-basis: 100%;
-    flex-flow: row nowrap;
 }
 ._slideshow{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
     flex-basis: 100%;
 }
