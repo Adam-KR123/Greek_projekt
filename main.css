@@ -139,6 +139,7 @@ div.timer_holder{
     align-items: center;
     margin: 100px 0px 100px 0px;
     flex-basis: 100%;
+    flex-flow: row nowrap;
 }
 ._slideshow{
     display: flex;
@@ -171,9 +172,6 @@ div.timer_holder{
     margin: 0px 150px 50px 150px;
     font-size: 2rem;
     padding: 20px;
-}
-._slideshow div{
-    max-width: 40%;
 }
 .button_container button:hover{
     background-color: white;
