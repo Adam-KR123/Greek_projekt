@@ -175,9 +175,6 @@ div.timer_holder{
 ._slideshow div{
     max-width: 40%;
 }
-p{
-    width: 50%;
-}
 .button_container button:hover{
     background-color: white;
     color: black;
