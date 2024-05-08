@@ -142,7 +142,7 @@ div.timer_holder{
 }
 ._slideshow{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-evenly;
     flex-basis: 100%;
 }
