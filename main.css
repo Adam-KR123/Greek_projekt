@@ -1,0 +1,179 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: "Sedan SC" ,serif;
+}
+div.grid_main{
+    display: grid;
+    grid-template-areas: 
+    "n n n n n"
+    "m m m m m"
+    "m m m m m"
+    "w w w w w"
+    "w w w w w"
+    "w w w w w"
+    "w w w w w"
+    "f f f f f"
+    ;
+    grid-template-columns: repeat(5, 1fr);
+}
+div.nav{
+    grid-area:n;
+    display: flex;
+    background-color: black;
+    border-bottom: 5px solid white;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    top: 0px;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+div.nav_button{
+    padding: 2vh;
+    cursor: pointer;
+    font-size: 2rem;
+}
+div.nav_button a{
+    padding: 2vh;
+    color: white;
+    text-decoration:none ;
+}
+div.main{
+    grid-area:m;
+    height: 80vh;
+    background-image: url(background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.main h1{
+    top: 50%;
+    left:50%;
+    position: absolute;
+    text-align: center;
+    font-size: 5rem;
+    padding: 50px 0px 50px 0px;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+div.paragraph{
+    grid-area:w;
+    display: grid;
+    grid-template-areas: 
+    "tim tim tim tim"
+    "sli sli txt txt"
+    ;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 15px;
+}
+div.timer_holder{
+    grid-area: tim;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    padding-top: 30px;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+  }
+  
+  @keyframes fade {
+    from {opacity:0} 
+    to {opacity: 1}
+  }
+.fade img{
+    width: 100%;
+    border-radius: 10px;
+}
+.slideshow_container{
+    grid-area: sli;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    grid-area: f;
+    height: 100px;
+    background-color: rgb(40, 40,40);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.footer div{
+    padding:0px 30px 0px 30px;
+}
+.footer div img{
+    width: 50px;
+}
+.para_text{
+    grid-area: txt;
+    font-size: 2rem;
+}
+.para_text h2{
+    text-align: center;
+    font-size: 4rem;
+}
+.paragraph_i{
+    grid-area: w;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+}
+.istenek_slideshow_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0px 100px 0px;
+    flex-basis: 100%;
+}
+._slideshow{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    flex-basis: 100%;
+}
+@keyframes rightil{
+    from{transform: translate(0px, 0px); opacity: 1;}
+    to{transform: translate(-100px,0px);opacity: 0;}
+}
+@keyframes leftil{
+    from{transform: translate(0px, 0px); opacity: 1;}
+    to{transform: translate(100px,0px);opacity: 0;}
+}
+._slideshow h2{
+    font-size: 3.5rem;
+}
+._slideshow img{
+    height: 500px;
+}
+.button_container{
+    display: block;
+}
+.button_container button{
+    background-color: rgba(0,0,0,0);
+    color: white;
+    border: 5px white solid;
+    text-align: center;
+    margin: 0px 150px 50px 150px;
+    font-size: 2rem;
+    padding: 20px;
+}
+.button_container button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
