@@ -17,9 +17,10 @@ for( let x=0;x<8;x++){
     used_words[used_index]=words[words_rnd]
     words.splice(words_rnd,1)
     used_index++;
+    }
     let maradék_helyek=8-new_letters.length;
     let elötte_helyek=Math.floor(Math.random()*maradék_helyek)
-    }
+    let szó_index=0;
     for(let y=0;y<8;y++){
         let rnd=Math.floor(Math.random()*26);
         let new_div=document.createElement("div")
@@ -30,11 +31,12 @@ for( let x=0;x<8;x++){
         new_div.style.justifyContent="center"
         new_div.style.gridArea=(x+1)+"/"+(y+1);
         if(new_letters.length+y<=8 || megfel){
-            if(y>=new_letters.length || y<=elötte_helyek){
+            if(y-elötte_helyek>=new_letters.length || y<elötte_helyek){
                 let rnd_letters=Math.floor(Math.random()*26)
                 new_div.textContent=letters[rnd_letters]
             }else{
-            new_div.textContent=new_letters[y-elötte_helyek]
+            new_div.textContent=new_letters[szó_index]
+            szó_index++
             megfel=true;}
             
         }document.getElementById("jatek_gameboard").appendChild(new_div)
