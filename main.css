@@ -192,7 +192,7 @@ div.timer_holder{
 .j_paragraph{
     grid-area: w;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     padding: 50px;
@@ -217,4 +217,10 @@ div.timer_holder{
     border: 5px white solid;
     width: 60vw;
     height: 60vw;
+}
+.timer_game label{
+    display: none;
+    border: white solid 5px;
+    font-size: 4rem;
+    padding: 50px;
 }
