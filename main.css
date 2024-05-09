@@ -189,3 +189,16 @@ div.timer_holder{
         justify-content: center;
     }
 }
+.j_paragraph{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+.start{
+    background-color: black;
+    color: white;
+    border: white;
+    font-size: 2rem;
+}
