@@ -199,6 +199,6 @@ div.timer_holder{
 .start{
     background-color: black;
     color: white;
-    border: 5px solid white;
+    border: 5px white solid;
     font-size: 2rem;
 }
