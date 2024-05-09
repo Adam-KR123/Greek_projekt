@@ -181,3 +181,8 @@ div.timer_holder{
     color: black;
     cursor: pointer;
 }
+@media(max-width:800px){
+    ._slideshow{
+        flex-flow: column nowrap;
+    }
+}
