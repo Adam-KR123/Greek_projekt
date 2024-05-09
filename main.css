@@ -184,6 +184,7 @@ div.timer_holder{
 @media(max-width:800px){
     ._slideshow{
         flex-flow: column nowrap;
-        align-content: center;
+        align-items: center;
+        justify-content: center;
     }
 }
