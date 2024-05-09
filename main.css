@@ -196,7 +196,7 @@ div.timer_holder{
     align-items: center;
     padding: 50px;
 }
-.start{
+.start_button{
     background-color: black;
     color: white;
     border: 5px white solid;
