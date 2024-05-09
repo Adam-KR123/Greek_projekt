@@ -159,6 +159,7 @@ div.timer_holder{
 }
 ._slideshow img{
     height: 500px;
+    max-width: 100%;
 }
 .button_container{
     display: block;
