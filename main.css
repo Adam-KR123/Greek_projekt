@@ -190,15 +190,31 @@ div.timer_holder{
     }
 }
 .j_paragraph{
+    grid-area: w;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
     padding: 50px;
 }
-.start_button{
+.start{
     background-color: black;
     color: white;
     border: 5px white solid;
+    border-radius: 10px;
     font-size: 4rem;
+    padding: 50px;
+}
+.start:hover{
+    color: black;
+    background-color: white;
+    cursor: pointer;
+}
+.gameboard{
+    display: none;
+    grid-template-rows: repeat(8,1fr);
+    grid-template-columns: repeat(8,1fr);
+    border: 5px white solid;
+    width: 60vw;
+    height: 60vw;
 }
