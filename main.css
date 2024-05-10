@@ -218,7 +218,7 @@ div.timer_holder{
     width: 60vw;
     height: 60vw;
 }
-#timer_game label{
+#timer_game{
     display: none;
     border: white solid 5px;
     font-size: 4rem;
