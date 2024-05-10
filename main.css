@@ -182,13 +182,7 @@ div.timer_holder{
     color: black;
     cursor: pointer;
 }
-@media(max-width:800px){
-    ._slideshow{
-        flex-flow: column nowrap;
-        align-items: center;
-        justify-content: center;
-    }
-}
+
 .j_paragraph{
     grid-area: w;
     display: flex;
@@ -215,12 +209,23 @@ div.timer_holder{
     grid-template-rows: repeat(8,1fr);
     grid-template-columns: repeat(8,1fr);
     border: 5px white solid;
-    width: 60vw;
-    height: 60vw;
+    width: 70vh;
+    height: 70vh;
 }
 #timer_game{
     display: none;
     border: white solid 5px;
-    font-size: 4rem;
-    padding: 50px;
+    font-size: 5vw;
+    padding: 3vw;
+}
+@media(max-width:800px){
+    ._slideshow{
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .gameboard{
+        width: 60vw;
+        height: 60vw;
+    }
 }

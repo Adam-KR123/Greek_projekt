@@ -3,12 +3,12 @@ let minutes=0
 let start_button=document.getElementById("jatek_start_button");
 start_button.addEventListener("click",(e)=>{
     document.getElementById("start_div").style.display="none";
-    document.getElementById("jatek_gameboard").style.display="grid";
-    document.getElementById("timer_game").style.display="block"
+    document.getElementById("jatek_gameboard").style.display="grid";    
     seconds=0;
     minutes=0
+    document.getElementById("timer_game").style.display="block"
+    setTime();
 })
-setTime();
 let words=["hádész", "zeusz","athéna","apolló","alvilág","olümposz","athén"]
 let letters=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 let used_words=[];
@@ -47,15 +47,28 @@ for( let x=0;x<8;x++){
             
         }document.getElementById("jatek_gameboard").appendChild(new_div)
         }
-    }
-    function setTime(){
-        seconds++
-        if(seconds/60==1){
+}
+
+
+
+function setTime(){
+        if(seconds<10){
+            document.getElementById("seconds").innerText="0"+seconds;
+        }
+        else{
+        document.getElementById("seconds").innerText=seconds
+        }
+        if(minutes<10){
+            document.getElementById("minutes").innerText="0"+minutes
+        }
+        else{
+            document.getElementById("minutes").innerText=minutes
+        }
+        if(seconds/59==1){
             seconds=0
             minutes++;
         }
-        document.getElementById("seconds").innerText=seconds
-        document.getElementById("minutes").innerText=minutes
+        seconds++
         console.log("!!!!!!!")
         setTimeout(setTime,1000)
-    }
+}
