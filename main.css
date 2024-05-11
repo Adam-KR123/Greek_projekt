@@ -186,8 +186,8 @@ div.timer_holder{
 .j_paragraph{
     grid-area: w;
     display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
     align-items: center;
     padding: 50px;
 }
@@ -211,12 +211,44 @@ div.timer_holder{
     border: 5px white solid;
     width: 70vh;
     height: 70vh;
+    user-select: none;
+    margin: 50px;
 }
 #timer_game{
     display: none;
     border: white solid 5px;
     font-size: 5vw;
     padding: 3vw;
+    width: 10vw;
+}
+.score{
+    display: none;
+    font-size: 5vw;
+    padding: 3vw;
+    border: solid white 5px;
+    width: 10vw;
+}
+.word_tobe_guessed{
+    display: none;
+    width: 60vw;
+    height: 20vh;
+    text-align: center;
+    line-height: 20vh;
+    font-size: 5vw;
+    border:solid white 5px;
+}
+.end_screen{
+    display: none;
+    width: 80vh;
+    height: 80vh;
+    text-align: center;
+}
+.end_screen h1{
+    font-size: 8vw;
+}
+.end_screen p{
+    font-size: 5vw;
+
 }
 @media(max-width:800px){
     ._slideshow{
