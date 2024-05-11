@@ -20,7 +20,7 @@ let used_index=0;
 let used_letters=""
 let used_letters_indexes=[]
 for( let x=0;x<8;x++){
-    let words_rnd=Math.floor(Math.random()*(7-used_index))
+    let words_rnd=Math.floor(Math.random()*(8-used_index))
     let new_letters=[]
     if(words.length==0){
     }else{
