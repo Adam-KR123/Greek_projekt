@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Sedan+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Galéria</title>
+    <title>Teszt</title>
 </head>
 <body>
     <div class="grid_main">
@@ -19,14 +19,52 @@
         <div class="main">
             <h1>Galéria</h1>
         </div>
-        <div class="paragraph">
-            <h2>Üdv a görög istenek világában!</h2>
+        <div class="t_paragraph">
+            <button class="test_button" id="test_left">Előző</button>
+            <div class="question_div" id="q_01_div">
+                <p>Ki az istenek vezetője?</p><br>
+                <input type="radio" name="r_q_01" id="q_q1_01"><label for="q_q1_01" name="q_01">Árész</label></input><br>
+                <input type="radio" name="r_q_01" id="q_q1_02"><label for="q_q1_02" name="q_01">Poszeidón</label></input><br>
+                <input type="radio" name="r_q_01" id="q_q1_03"><label for="q_q1_03" name="q_01">Zeusz</label></input><br>
+                <input type="radio" name="r_q_01" id="q_q1_04"><label for="q_q1_04" name="q_01">Héra</label></input><br>
+            </div>
+            <div class="question_div" id="q_02_div">
+                <p>Kinek a jelzője a "Phoibosz"</p><br>
+                <input type="radio" name="r_q_02" id="q_q2_01"><label for="q_q2_01" name="q_02">Athéna</label></input><br>
+                <input type="radio" name="r_q_02" id="q_q2_02"><label for="q_q2_02" name="q_02">Poszeidón</label></input><br>
+                <input type="radio" name="r_q_02" id="q_q2_03"><label for="q_q2_03" name="q_02">Kronosz</label></input><br>
+                <input type="radio" name="r_q_02" id="q_q2_04"><label for="q_q2_04" name="q_02">Apolló</label></input><br>
+            </div>
+            <div class="question_div" id="q_03_div">
+                <p>Mi Aphrodité római megfelelője</p><br>
+                <input type="radio" name="r_q_03" id="q_q3_01"><label for="q_q3_01" name="q_03">Plútó</label></input><br>
+                <input type="radio" name="r_q_03" id="q_q3_02"><label for="q_q3_02" name="q_03">Vénusz</label></input><br>
+                <input type="radio" name="r_q_03" id="q_q3_03"><label for="q_q3_03" name="q_03">Mars</label></input><br>
+                <input type="radio" name="r_q_03" id="q_q3_04"><label for="q_q3_04" name="q_03">Diana</label></input><br>
+            </div>
+            <div class="question_div" id="q_04_div">
+                <p>Hádész minek az ura</p><br>
+                <input type="radio" name="r_q_04" id="q_q4_01"><label for="q_q4_01" name="q_04">Tartarosz</label></input><br>
+                <input type="radio" name="r_q_04" id="q_q4_02"><label for="q_q4_02" name="q_04">Alvilág</label></input><br>
+                <input type="radio" name="r_q_04" id="q_q4_03"><label for="q_q4_03" name="q_04">Ég</label></input><br>
+                <input type="radio" name="r_q_04" id="q_q4_04"><label for="q_q4_04" name="q_04">Óceán</label></input><br>
+            </div>
+            <div class="test_end" id="test_end">
+                <p>Köszönjük ,hogy kitöltötted a tesztet!</p>
+                <p>A végső pontszámod: <b id="final_test_score"></b></p>
+                <br><b id="answer_0"></b>
+                <br><b id="answer_1"></b>
+                <br><b id="answer_2"></b>
+                <br><b id="answer_3"></b>
+                <br><b id="answer_4"></b>
+            </div>
+            <button class="test_button" id="test_right">Következő</button>
         </div>
         <div class="footer">
             <div><span>Tel: +36 30 846 8899</span><br> <span>Email.: greek.mithology@gmail.com</span></div>
             <div><a href="https://www.facebook.com/gorogmitologia1/" target="_blank"><img src="facebook_icon.png" alt=""></a> <a href="https://hu.wikipedia.org/wiki/Görög_mitológia" target="_blank"><img src="wikipedia_icon.png" alt=""></a></div>
         </div>
     </div>
-    <script src="main.js"></script>
+    <script src="teszt.js"></script>
 </body>
 </html>

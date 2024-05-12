@@ -250,6 +250,46 @@ div.timer_holder{
     font-size: 5vw;
 
 }
+.t_paragraph{
+    grid-area: w;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.question_div{
+    display: none;
+    text-align: center;
+}
+.question_div p{
+    font-size: 5vw;
+}
+.question_div label{
+    font-size: 3vw;
+}
+.question_div input{
+    height: 2vw;
+}
+.test_button{
+    display: block;
+    background-color: black;
+    color: white;
+    font-size: 2.5vw;
+    padding: 1vw;
+    border: solid white 5px;
+    width: 15vw;
+    text-align: center;
+    line-height: 2.5vw;
+    cursor: pointer;
+}
+.test_end{
+    display: none;
+    font-size: 4vw;
+    text-align: center;
+}
+.answers_p{
+    text-align: justify;
+}
 @media(max-width:800px){
     ._slideshow{
         flex-flow: column nowrap;
