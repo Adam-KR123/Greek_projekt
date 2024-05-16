@@ -177,6 +177,9 @@ div.timer_holder{
     max-width: 40%;
     font-size: 2rem;
 }
+.video div{
+    max-width: 100%;
+}
 .button_container button:hover{
     background-color: white;
     color: black;
