@@ -88,7 +88,14 @@ button_right.addEventListener("click",(e)=>{
                 document.getElementById("answer_"+i).textContent="Helyes válaszok- - - - - - -Általad megadott válaszok"
             }
             else{
-                document.getElementById("answer_"+i).textContent=answers[i-1]+"- - - - - - -"+p_answers[i-1]
+                if(answers[i-1]===p_answers[i-1]){
+                    document.getElementById("answer_"+i).textContent=answers[i-1]+"- - - - - - -"+p_answers[i-1]
+                    document.getElementById("answer_"+i).style.color="green";
+                }
+                else{
+                    document.getElementById("answer_"+i).textContent=answers[i-1]+"- - - - - - -"+p_answers[i-1]
+                    document.getElementById("answer_"+i).style.color="red";
+                }
             }
         }
     }
